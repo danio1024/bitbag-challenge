@@ -1,0 +1,12 @@
+default:
+    suites:
+        ui_managing_blocks:
+            contexts:
+                - sylius.behat.context.hook.doctrine_orm
+
+                - sylius.behat.context.setup.channel
+                - sylius.behat.context.setup.admin_security
+
+                - bitbag_challenge.behat.context.ui.admin.colored_items
+            filters:
+                tags: "@colored_items && @ui"

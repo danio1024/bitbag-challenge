@@ -1,0 +1,5 @@
+services:
+    bitbag_challenge.behat.context.ui.admin.colored_items: 
+        class: App\Tests\Behat\Context\Ui\Admin\ColoredItemsContext
+        arguments:
+            - '@'
